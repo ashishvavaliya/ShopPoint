@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer/FormContainer';
-import * as productAction from '../actions/productAction';
-import * as productConstants from '../constants/productConstants';
+import * as productAction from '../action/productAction';
+import * as productConstants from '../Constants/productConstants';
 import ErrorMessage from '../components/Message/errorMessage';
 import {
   TextField,
@@ -16,9 +16,9 @@ import {
   makeStyles,
 } from '@material-ui/core/';
 import { Link, Redirect } from 'react-router-dom';
-import confirmationImg from '../assests/confirmation.png';
+import confirmationImg from "Assests/confirmation.png";
 import { confirmAlert } from 'react-confirm-alert';
-import * as routes from '../constants/routes';
+import * as routes from '../Constants/routes';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 
 const useStyles = makeStyles((theme) => ({

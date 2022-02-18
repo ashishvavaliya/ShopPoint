@@ -5,8 +5,8 @@ import ErrorMessage from '../components/Message/errorMessage';
 import SuccessMessage from '../components/Message/successMessage';
 import FormContainer from '../components/FormContainer/FormContainer';
 import { TextField, Button, CircularProgress, makeStyles } from '@material-ui/core/';
-import * as userAction from '../actions/userAction';
-import * as userConstants from '../constants/userConstants';
+import * as userAction from '../action/userAction';
+import * as userConstants from '../Constants/userConstants';
 
 const useStyles = makeStyles((theme) => ({
   prgressColor: {

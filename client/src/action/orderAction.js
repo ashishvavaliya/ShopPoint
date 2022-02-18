@@ -1,7 +1,7 @@
 import * as orderServices from '../services/order';
 import { handleError } from '../utils/error';
-import * as orderConstants from '../constants/orderConstants';
-import * as cartConstants from '../constants/cartConstants';
+import * as orderConstants from '../Constants/orderConstants';
+import * as cartConstants from '../Constants/cartConstants';
 
 export const createOrder = (orderData) => async (dispatch) => {
   try {

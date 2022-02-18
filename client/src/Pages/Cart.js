@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
-import { addToCart, removeItemFromCart } from '../actions/cartAction';
+import { addToCart, removeItemFromCart } from '../action/cartAction';
 import { Select, Button, FormControl, makeStyles, MenuItem } from '@material-ui/core/';
 import { interpolate } from '../utils/string';
-import * as routes from '../constants/routes';
+import * as routes from '../Constants/routes';
 
 const useStyles = makeStyles((theme) => ({
   typography: {

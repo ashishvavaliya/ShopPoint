@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
-import * as productAction from '../actions/productAction';
+import * as productAction from '../action/productAction';
 import Product from '../components/Product/Product';
 import Filter from '../components/Filter/Filter';
 import ErrorMessage from '../components/Message/errorMessage';
 import HomeLoader from '../components/Loader/HomeLoader';
 import Meta from '../components/Meta/Meta';
-import * as routes from '../constants/routes';
+import * as routes from '../Constants/routes';
 
 const Home = () => {
   const [sort, setSort] = useState([]);

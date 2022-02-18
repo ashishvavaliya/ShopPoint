@@ -1,6 +1,6 @@
 import * as userServices from '../services/user';
 import { handleError } from '../utils/error';
-import * as userConstants from '../constants/userConstants';
+import * as userConstants from '../Constants/userConstants';
 import * as tokenService from '../services/token';
 
 export const auth = (email, password) => async (dispatch) => {
@@ -74,9 +74,9 @@ export const emailVerification = (verificationCode) => async (dispatch) => {
       ...authData,
       token,
     };
-   
+
     tokenService.setToken(userInfo);
-    
+
     dispatch({
       type: userConstants.USER_AUTH_SUCCESS,
       payload: userInfo,

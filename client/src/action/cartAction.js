@@ -1,6 +1,6 @@
 import * as productServices from '../services/Product';
 import { handleError } from '../utils/error';
-import * as cartConstants from '../constants/cartConstants';
+import * as cartConstants from '../Constants/cartConstants';
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
   try {

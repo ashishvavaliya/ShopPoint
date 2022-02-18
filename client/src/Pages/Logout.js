@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import * as routes from '../constants/routes';
-import * as userAction from '../actions/userAction';
+import * as routes from '../Constants/routes';
+import * as userAction from '../action/userAction';
 
 const Logout = () => {
   const dispatch = useDispatch();

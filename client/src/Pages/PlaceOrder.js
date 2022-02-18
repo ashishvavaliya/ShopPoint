@@ -4,10 +4,10 @@ import { Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import ErrorMessage from '../components/Message/errorMessage';
 import CheckoutSteps from '../components/CheckoutStep/CheckoutSteps';
-import { createOrder } from '../actions/orderAction';
-import * as routes from '../constants/routes';
+import { createOrder } from '../action/orderAction';
+import * as routes from '../Constants/routes';
 import { interpolate } from '../utils/string';
-import * as orderConstants from '../constants/orderConstants';
+import * as orderConstants from '../Constants/orderConstants';
 import { Button, CircularProgress, makeStyles } from '@material-ui/core/';
 
 const useStyles = makeStyles((theme) => ({
@@ -38,7 +38,7 @@ const PlaceOrder = ({ history }) => {
   };
 
   cart.itemsPrice = addDecimals(cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0));
-  cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 100);
+  cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 0);
   cart.taxPrice = addDecimals(Number((0.15 * cart.itemsPrice).toFixed(2)));
   cart.totalPrice = (Number(cart.itemsPrice) + Number(cart.shippingPrice) + Number(cart.taxPrice)).toFixed(2);
 

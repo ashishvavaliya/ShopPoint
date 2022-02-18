@@ -15,10 +15,10 @@ import {
   MenuItem,
   makeStyles,
 } from '@material-ui/core/';
-import { productListForAdmin, deleteProduct, createProduct } from '../actions/productAction';
-import * as routes from '../constants/routes';
+import { productListForAdmin, deleteProduct, createProduct } from '../action/productAction';
+import * as routes from '../Constants/routes';
 import { interpolate } from '../utils/string';
-import * as productConstants from '../constants/productConstants';
+import * as productConstants from '../Constants/productConstants';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 

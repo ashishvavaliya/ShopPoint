@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Col, ListGroup, Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import * as productAction from '../../actions/productAction';
+import * as productAction from '../../action/productAction';
 import ErrorMessage from '../Message/errorMessage';
 import { Link } from 'react-router-dom';
 import Rating from '../Rating/Rating';
@@ -16,8 +16,8 @@ import {
   CircularProgress,
 } from '@material-ui/core/';
 
-import * as productConstants from '../../constants/productConstants';
-import * as routes from '../../constants/routes';
+import * as productConstants from '../../Constants/productConstants';
+import * as routes from '../../Constants/routes';
 
 const useStyles = makeStyles((theme) => ({
   typography: {

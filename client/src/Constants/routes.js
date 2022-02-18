@@ -4,6 +4,7 @@ export const RESET_PASSWORD = '/reset-password';
 export const FORGOT_PASSWORD = '/forgot-passsword';
 export const EMAIL_VERIFICATION = '/email-verification';
 export const LOGOUT = '/logout';
+export const ABOUT_US = '/about-us';
 export const REGISTER = '/register';
 export const PRODUCT = '/product/:productId';
 export const CART = '/cart';

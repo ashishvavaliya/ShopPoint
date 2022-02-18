@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, FormControl } from 'react-bootstrap';
-import * as routes from '../../constants/routes';
+import * as routes from '../../Constants/routes';
 import { useHistory } from 'react-router-dom';
 import '../style.css';
 const SearchBox = () => {

@@ -3,7 +3,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector } from 'react-redux';
 import SearchBox from '../SearchBox/SearchBox';
-import * as routes from '../../constants/routes';
+import * as routes from '../../Constants/routes';
 import '../style.css';
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to={routes.HOME}>
-            <Navbar.Brand>ShopPoint</Navbar.Brand>
+            <Navbar.Brand>Thelp</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -38,6 +38,9 @@ const Header = () => {
                 <NavDropdown title={userInfo.name} id="username">
                   <LinkContainer to={routes.PROFILE}>
                     <NavDropdown.Item>Profile</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to={routes.ABOUT_US}>
+                    <NavDropdown.Item>About Us</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to={routes.LOGOUT}>
                     <NavDropdown.Item>Logout</NavDropdown.Item>

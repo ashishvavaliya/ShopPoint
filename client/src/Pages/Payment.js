@@ -3,8 +3,8 @@ import { Col, Form, Row } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import FormContainer from '../components/FormContainer/FormContainer';
 import CheckoutSteps from '../components/CheckoutStep/CheckoutSteps';
-import { savePaymentMethod } from '../actions/cartAction';
-import * as routes from '../constants/routes';
+import { savePaymentMethod } from '../action/cartAction';
+import * as routes from '../Constants/routes';
 import { Button, Radio, RadioGroup, FormControlLabel, FormControl, FormLabel } from '@material-ui/core/';
 
 const PaymentMethod = ({ history }) => {

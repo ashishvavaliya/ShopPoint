@@ -12,6 +12,7 @@ import AdminRoute from './routes/AdminRoute';
 import Shipping from './pages/Shipping';
 import Payment from './pages/Payment';
 import Profile from './pages/Profile';
+import AboutUs from './pages/AboutUs';
 import PlaceOrder from './pages/PlaceOrder';
 import OrderList from './pages/OrdersList';
 import ProductList from './pages/ProductList';
@@ -24,7 +25,7 @@ import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import EmailVerification from './pages/EmailVerification';
-import * as routes from './constants/routes';
+import * as routes from './Constants/routes';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route exact={true} path={routes.CART} component={Cart} />
             <Route exact={true} path={routes.FORGOT_PASSWORD} component={ForgotPassword} />
             <Route exact={true} path={routes.RESET_PASSWORD} component={ResetPassword} />
+            <Route exact={true} path={routes.ABOUT_US} component={AboutUs} />
             <PrivateRoute exact={true} path={routes.SHIPPING} component={Shipping} />
             <PrivateRoute exact={true} path={routes.PAYMENT} component={Payment} />
             <PrivateRoute exact={true} path={routes.PLACE_ORDER} component={PlaceOrder} />

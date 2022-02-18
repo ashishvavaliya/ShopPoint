@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import ErrorMessage from '../components/Message/errorMessage';
 import FormContainer from '../components/FormContainer/FormContainer';
 import { TextField, Button, CircularProgress, makeStyles } from '@material-ui/core/';
-import * as routes from '../constants/routes';
-import * as userAction from '../actions/userAction';
-import * as userConstants from '../constants/userConstants';
+import * as routes from '../Constants/routes';
+import * as userAction from '../action/userAction';
+import * as userConstants from '../Constants/userConstants';
 
 const useStyles = makeStyles((theme) => ({
   prgressColor: {

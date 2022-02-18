@@ -3,8 +3,8 @@ import { Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer/FormContainer';
 import CheckoutSteps from '../components/CheckoutStep/CheckoutSteps';
-import { saveShippingAddress } from '../actions/cartAction';
-import * as routes from '../constants/routes';
+import { saveShippingAddress } from '../action/cartAction';
+import * as routes from '../Constants/routes';
 import { TextField, Button } from '@material-ui/core/';
 
 const Shipping = ({ history }) => {

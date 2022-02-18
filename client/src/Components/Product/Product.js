@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import Rating from '../Rating/Rating';
-import * as routes from '../../constants/routes';
+import * as routes from '../../Constants/routes';
 import { interpolate } from '../../utils/string';
 import 'animate.css';
 

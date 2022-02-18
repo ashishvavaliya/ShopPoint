@@ -6,7 +6,7 @@ export const mainHeader = (userInfo) => {
       body: [
         [
           {
-            text: 'SHOPPOINT',
+            text: 'Thelp',
             style: 'mainheader',
             bold: true,
             marginTop: 10,
